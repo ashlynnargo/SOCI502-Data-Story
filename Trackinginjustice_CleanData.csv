@@ -1,0 +1,281 @@
+age,date,gender,province,police_service,highest_level_force,year,agency_group
+37,2021-01-05,Man,BC,Vancouver Police Department,gunshot,2021,Municipal/regional police
+27,2021-01-05,Man,ON,Niagara Regional Police Service,gunshot,2021,Municipal/regional police
+61,2021-01-13,Man,ON,Niagara Regional Police Service,restraint,2021,Municipal/regional police
+30,2021-01-23,Man,ON,Sault Ste. Marie Police Service,taser/cew,2021,Municipal/regional police
+37,2021-02-06,Man,ON,York Regional Police,gunshot,2021,Municipal/regional police
+18,2021-02-11,Man,ON,Peel Regional Police,restraint,2021,Municipal/regional police
+43,2021-02-24,Man,AB,Edmonton Police Service,taser/cew,2021,Municipal/regional police
+46,2021-02-24,Man,ON,Toronto Police Service,gunshot,2021,Municipal/regional police
+28,2021-02-27,Man,BC,RCMP,gunshot,2021,RCMP
+20,2021-03-03,Woman,AB,Calgary Police Service,gunshot,2021,Municipal/regional police
+27,2021-03-10,Man,MB,Winnipeg Police Service,gunshot,2021,Municipal/regional police
+26,2021-03-11,Man,SK,RCMP,gunshot,2021,RCMP
+31,2021-03-16,Man,QC,Surete du Quebec,gunshot,2021,Provincial police
+37,2021-03-25,Man,ON,Toronto Police Service,restraint,2021,Municipal/regional police
+24,2021-04-03,Man,AB,RCMP,gunshot,2021,RCMP
+16,2021-04-05,Man,ON,Timmins Police Service,restraint,2021,Municipal/regional police
+43,2021-04-06,Man,ON,OPP,gunshot,2021,Provincial police
+26,2021-05-07,Man,AB,RCMP,restraint,2021,RCMP
+28,2021-05-22,Man,ON,Toronto Police Service,gunshot,2021,Municipal/regional police
+46,2021-05-24,Man,AB,RCMP,gunshot,2021,RCMP
+50,2021-05-27,Man,AB,Edmonton Police Service,restraint,2021,Municipal/regional police
+33,2021-06-06,Man,AB,Edmonton Police Service,gunshot,2021,Municipal/regional police
+37,2021-06-11,Man,NL,RCMP,gunshot,2021,RCMP
+29,2021-06-18,Man,AB,RCMP,gunshot,2021,RCMP
+28,2021-06-20,Man,AB,RCMP,gunshot,2021,RCMP
+NA,2021-06-28,Man,BC,RCMP,restraint,2021,RCMP
+22,2021-07-01,Man,ON,OPP,restraint,2021,Provincial police
+50,2021-07-03,Man,AB,Edmonton Police Service,gunshot,2021,Municipal/regional police
+NA,2021-07-06,Man,SK,RCMP,gunshot,2021,RCMP
+24,2021-07-07,Man,ON,OPP,gunshot,2021,Provincial police
+38,2021-07-08,Man,BC,RCMP,gunshot,2021,RCMP
+37,2021-07-10,Man,AB,Calgary Police Service,physical force,2021,Municipal/regional police
+49,2021-07-23,Man,QC,Surete du Quebec,restraint,2021,Provincial police
+43,2021-07-27,Man,AB,Edmonton Police Service,gunshot,2021,Municipal/regional police
+38,2021-08-01,Man,QC,Service de police de la Ville de Repentigny,gunshot,2021,Municipal/regional police
+38,2021-08-05,Woman,ON,OPP,gunshot,2021,Provincial police
+37,2021-08-05,Man,BC,RCMP,intermediate weapon,2021,RCMP
+39,2021-08-14,Man,AB,RCMP,gunshot,2021,RCMP
+31,2021-08-15,Man,ON,OPP,gunshot,2021,Provincial police
+NA,2021-08-31,Man,BC,RCMP,gunshot,2021,RCMP
+NA,2021-09-12,Man,BC,Victoria Police Department,gunshot,2021,Municipal/regional police
+19,2021-09-19,Man,ON,Sault Ste. Marie Police Service,gunshot,2021,Municipal/regional police
+44,2021-09-30,Man,QC,Surete du Quebec,gunshot,2021,Provincial police
+48,2021-10-03,Man,ON,Durham Regional Police Service,intermediate weapon,2021,Municipal/regional police
+41,2021-10-10,Man,ON,Toronto Police Service,other,2021,Municipal/regional police
+27,2021-10-15,Man,AB,RCMP,gunshot,2021,RCMP
+28,2021-10-28,Man,ON,London Police Service,gunshot,2021,Municipal/regional police
+70,2021-11-03,Man,ON,Toronto Police Service,gunshot,2021,Municipal/regional police
+22,2021-11-06,Man,NU,RCMP,gunshot,2021,RCMP
+NA,2021-11-25,Man,ON,OPP,gunshot,2021,Provincial police
+28,2021-12-14,Man,SK,RCMP,gunshot,2021,RCMP
+31,2021-12-15,Man,MB,RCMP,gunshot,2021,RCMP
+NA,2021-12-16,Man,QC,Service de police de la Ville de Montreal,gunshot,2021,Municipal/regional police
+33,2021-12-31,Man,AB,Edmonton Police Service,gunshot,2021,Municipal/regional police
+39,2021-12-31,Man,NB,RCMP,gunshot,2021,RCMP
+35,2022-01-21,Man,ON,York Regional Police,gunshot,2022,Municipal/regional police
+41,2022-02-19,Man,AB,Calgary Police Service,gunshot,2022,Municipal/regional police
+NA,2022-02-23,Man,ON,Hamilton Police Service,gunshot,2022,Municipal/regional police
+36,2022-02-23,Man,AB,Edmonton Police Service,gunshot,2022,Municipal/regional police
+59,2022-02-23,Man,AB,Edmonton Police Service,gunshot,2022,Municipal/regional police
+33,2022-02-26,Man,SK,RCMP,gunshot,2022,RCMP
+49,2022-02-28,Man,ON,Niagara Parks Police Service,gunshot,2022,Municipal/regional police
+NA,2022-03-01,Man,QC,Surete du Quebec,gunshot,2022,Provincial police
+39,2022-03-12,Man,AB,Edmonton Police Service,gunshot,2022,Municipal/regional police
+55,2022-03-25,Man,AB,Edmonton Police Service,gunshot,2022,Municipal/regional police
+NA,2022-04-01,Man,BC,RCMP,gunshot,2022,RCMP
+NA,2022-04-02,Man,BC,RCMP,gunshot,2022,RCMP
+NA,2022-04-08,Man,BC,RCMP,gunshot,2022,RCMP
+40,2022-04-27,Man,BC,Vancouver Police Department,gunshot,2022,Municipal/regional police
+NA,2022-05-05,Man,BC,Vancouver Police Department,gunshot,2022,Municipal/regional police
+27,2022-05-26,Man,ON,Toronto Police Service,gunshot,2022,Municipal/regional police
+22,2022-06-02,Man,SK,RCMP,gunshot,2022,RCMP
+NA,2022-06-13,Man,BC,RCMP,gunshot,2022,RCMP
+NA,2022-06-17,Man,MB,Winnipeg Police Service,gunshot,2022,Municipal/regional police
+32,2022-06-18,Man,SK,Saskatoon Police Service,restraint,2022,Municipal/regional police
+NA,2022-06-23,Man,MB,Winnipeg Police Service,intermediate weapon,2022,Municipal/regional police
+41,2022-06-26,Man,QC,Service de police de l'agglomeration de Longueuil,physical force,2022,Municipal/regional police
+21,2022-06-27,Man,ON,Ottawa Police Service,gunshot,2022,Municipal/regional police
+22,2022-06-28,Man,BC,Saanich Police Department; Victoria Police Department,gunshot,2022,Multiple agencies
+22,2022-06-28,Man,BC,Saanich Police Department; Victoria Police Department,gunshot,2022,Multiple agencies
+22,2022-07-09,Man,MB,RCMP,gunshot,2022,RCMP
+36,2022-07-10,Man,MB,RCMP,gunshot,2022,RCMP
+NA,2022-07-16,Man,BC,RCMP,taser/cew,2022,RCMP
+26,2022-07-17,Man,SK,Regina Police Service; Moosejaw Police Service; RCMP,gunshot,2022,Multiple agencies
+66,2022-07-22,Man,ON,OPP,restraint,2022,Provincial police
+54,2022-07-23,Man,BC,RCMP,gunshot,2022,RCMP
+28,2022-07-25,Man,BC,RCMP,gunshot,2022,RCMP
+48,2022-07-27,Man,QC,Regie intermunicipale de police de Saint-Jean-sur-Richelieu,gunshot,2022,Municipal/regional police
+26,2022-08-04,Man,QC,Service de police de la Ville de Montreal,gunshot,2022,Municipal/regional police
+NA,2022-08-08,Woman,AB,RCMP,gunshot,2022,RCMP
+42,2022-08-13,Man,ON,Toronto Police Service,gunshot,2022,Municipal/regional police
+NA,2022-08-14,Man,BC,RCMP,gunshot,2022,RCMP
+70,2022-08-16,Man,ON,Windsor Police Service,gunshot,2022,Municipal/regional police
+42,2022-08-22,Man,BC,Vancouver Police Department,intermediate weapon,2022,Municipal/regional police
+59,2022-08-27,Man,NS,Halifax Regional Police,gunshot,2022,Municipal/regional police
+NA,2022-08-27,Man,MB,Winnipeg Police Service,gunshot,2022,Municipal/regional police
+52,2022-09-04,Man,ON,Niagara Regional Police Service,gunshot,2022,Municipal/regional police
+42,2022-09-06,Man,QC,RCMP; CBSA,intermediate weapon,2022,Multiple agencies
+31,2022-09-07,Man,SK,RCMP,restraint,2022,RCMP
+40,2022-09-12,Man,ON,"Halton Regional Police Services, Hamilton Police Service",gunshot,2022,Multiple agencies
+NA,2022-09-13,Man,BC,RCMP,gunshot,2022,RCMP
+38,2022-09-17,Man,QC,Service de police de la Ville de Montreal,gunshot,2022,Municipal/regional police
+72,2022-09-23,Man,AB,RCMP,physical force,2022,RCMP
+25,2022-10-10,Man,ON,York Regional Police,gunshot,2022,Municipal/regional police
+30,2022-10-10,Man,AB,RCMP,gunshot,2022,RCMP
+23,2022-10-11,Man,ON,South Simcoe Police Service,gunshot,2022,Municipal/regional police
+32,2022-10-13,Man,ON,Toronto Police Service,other,2022,Municipal/regional police
+36,2022-10-27,Man,SK,Saskatoon Police Service,gunshot,2022,Municipal/regional police
+27,2022-11-12,Non-binary,BC,RCMP,gunshot,2022,RCMP
+NA,2022-11-24,Unknown,YT,RCMP,gunshot,2022,RCMP
+NA,2022-11-25,Man,ON,York Regional Police,gunshot,2022,Municipal/regional police
+27,2022-12-01,Man,AB,RCMP,gunshot,2022,RCMP
+NA,2022-12-03,Man,MB,Winnipeg Police Service,gunshot,2022,Municipal/regional police
+16,2022-12-14,Man,BC,RCMP,gunshot,2022,RCMP
+56,2022-12-16,Man,BC,RCMP,restraint,2022,RCMP
+73,2022-12-18,Man,ON,York Regional Police,gunshot,2022,Municipal/regional police
+39,2022-12-25,Man,AB,RCMP,gunshot,2022,RCMP
+34,2023-01-16,Man,AB,Prince Albert Police Service,gunshot,2023,Municipal/regional police
+NA,2023-02-09,Man,BC,Vancouver Police Department,gunshot,2023,Municipal/regional police
+34,2023-02-14,Man,AB,Calgary Police Service,gunshot,2023,Municipal/regional police
+NA,2023-03-16,Man,BC,RCMP,gunshot,2023,RCMP
+NA,2023-03-20,Man,QC,Service de police de la Ville de Quebec,gunshot,2023,Municipal/regional police
+35,2023-03-27,Man,QC,Surete du Quebec,gunshot,2023,Provincial police
+34,2023-04-02,Man,ON,Peel Regional Police,unknown,2023,Municipal/regional police
+NA,2023-04-05,Man,BC,RCMP,gunshot,2023,RCMP
+33,2023-04-13,Man,AB,RCMP,gunshot,2023,RCMP
+40,2023-04-26,Man,SK,Prince Albert Police Service,taser/cew,2023,Municipal/regional police
+32,2023-04-28,Man,ON,Toronto Police Service,unknown,2023,Municipal/regional police
+57,2023-05-03,Man,ON,Niagara Regional Police Service,restraint,2023,Municipal/regional police
+NA,2023-05-07,Unknown,QC,Surete du Quebec,gunshot,2023,Provincial police
+66,2023-05-09,Man,ON,OPP,gunshot,2023,Provincial police
+40,2023-05-10,Man,ON,Toronto Police Service,gunshot,2023,Municipal/regional police
+35,2023-05-24,Man,ON,Niagara Regional Police Service,unknown,2023,Municipal/regional police
+NA,2023-05-27,Man,NS,Halifax Regional Police,gunshot,2023,Municipal/regional police
+57,2023-05-27,Man,ON,Hamilton Police Service,gunshot,2023,Municipal/regional police
+46,2023-05-29,Man,AB,Calgary Police Service,gunshot,2023,Municipal/regional police
+39,2023-05-29,Man,AB,Calgary Police Service,gunshot,2023,Municipal/regional police
+NA,2023-06-05,Man,AB,RCMP,gunshot,2023,RCMP
+NA,2023-06-07,Unknown,QC,Surete du Quebec,gunshot,2023,Provincial police
+38,2023-06-12,Man,NL,Royal Newfoundland Constabulary,gunshot,2023,Municipal/regional police
+NA,2023-06-25,Man,ON,Ottawa Police Service,gunshot,2023,Municipal/regional police
+NA,2023-06-28,Man,BC,RCMP,gunshot,2023,RCMP
+NA,2023-07-05,Man,MB,Winnipeg Police Service,taser/cew,2023,Municipal/regional police
+NA,2023-07-19,Man,QC,Surete du Quebec,gunshot,2023,Provincial police
+35,2023-07-21,Man,ON,London Police Service,gunshot,2023,Municipal/regional police
+NA,2023-07-27,Man,QC,Quebec City Police Service,gunshot,2023,Municipal/regional police
+18,2023-08-05,Man,BC,Vancouver Police Department,gunshot,2023,Municipal/regional police
+44,2023-08-06,Man,AB,Medicine Hat Police Service,other,2023,Municipal/regional police
+23,2023-08-27,Man,BC,RCMP,gunshot,2023,RCMP
+30,2023-09-01,Man,AB,Edmonton Police Service,gunshot,2023,Municipal/regional police
+NA,2023-09-27,Man,AB,RCMP,gunshot,2023,RCMP
+50,2023-10-12,Man,AB,RCMP,taser/cew,2023,RCMP
+17,2023-10-13,Man,ON,York Regional Police,other,2023,Municipal/regional police
+32,2023-10-15,Man,AB,RCMP,gunshot,2023,RCMP
+NA,2023-10-18,Unknown,AB,Calgary Police Service,gunshot,2023,Municipal/regional police
+48,2023-10-23,Man,ON,Niagara Regional Police Service,gunshot,2023,Municipal/regional police
+NA,2023-11-07,Man,QC,Surete du Quebec,gunshot,2023,Provincial police
+37,2023-11-18,Man,BC,RCMP,gunshot,2023,RCMP
+39,2023-11-28,Man,MB,Winnipeg Police Service,gunshot,2023,Municipal/regional police
+NA,2023-11-28,Man,QC,Saguenay Police Service,gunshot,2023,Municipal/regional police
+NA,2023-11-30,Man,BC,Abbotsford Police Department,gunshot,2023,Municipal/regional police
+NA,2023-12-03,Man,AB,Edmonton Police Service,gunshot,2023,Municipal/regional police
+NA,2023-12-06,Woman,AB,Edmonton Police Service,gunshot,2023,Municipal/regional police
+37,2023-12-07,Man,ON,York Regional Police,gunshot,2023,Municipal/regional police
+NA,2023-12-17,Man,BC,Abbotsford Police Department,gunshot,2023,Municipal/regional police
+25,2023-12-19,Man,SK,RCMP,gunshot,2023,RCMP
+52,2023-12-29,Man,MB,Winnipeg Police Service,gunshot,2023,Municipal/regional police
+19,2023-12-31,Man,MB,Winnipeg Police Service,gunshot,2023,Municipal/regional police
+46,2024-01-02,Man,ON,Greater Sudbury Police Service,taser/cew,2024,Municipal/regional police
+35,2024-01-27,Man,MB,Winnipeg Police Service,other,2024,Municipal/regional police
+59,2024-02-13,Man,MB,Winnipeg Police Service,gunshot,2024,Municipal/regional police
+31,2024-02-19,Man,ON,Waterloo Regional Police Service,gunshot,2024,Municipal/regional police
+NA,2024-03-02,Man,ON,Halton Regional Police Service,gunshot,2024,Municipal/regional police
+26,2024-03-07,Man,ON,OPP,gunshot,2024,Provincial police
+45,2024-03-15,Man,AB,Calgary Police Service,gunshot,2024,Municipal/regional police
+NA,2024-04-05,Man,QC,Surete du Quebec,intermediate weapon,2024,Provincial police
+NA,2024-04-09,Man,AB,Edmonton Police Service,other,2024,Municipal/regional police
+27,2024-04-20,Man,MB,RCMP,gunshot,2024,RCMP
+37,2024-05-11,Man,ON,Sault Ste. Marie Police Service,gunshot,2024,Municipal/regional police
+65,2024-05-19,Man,SK,Regina Police Service,gunshot,2024,Municipal/regional police
+51,2024-05-24,Man,MB,RCMP,gunshot,2024,RCMP
+NA,2024-06-01,Man,BC,RCMP,gunshot,2024,RCMP
+NA,2024-06-03,Man,ON,Toronto Police Service,gunshot,2024,Municipal/regional police
+30,2024-06-04,Man,MB,Winnipeg Police Service,gunshot,2024,Municipal/regional police
+NA,2024-06-06,Unknown,QC,Surete du Quebec,unknown,2024,Provincial police
+49,2024-06-07,Woman,ON,OPP,other,2024,Provincial police
+27,2024-06-20,Man,SK,Saskatoon Police Service,gunshot,2024,Municipal/regional police
+NA,2024-06-21,Man,BC,RCMP,unknown,2024,RCMP
+NA,2024-06-25,Man,ON,OPP,gunshot,2024,Provincial police
+28,2024-06-29,Man,AB,Edmonton Police Service,gunshot,2024,Municipal/regional police
+18,2024-07-17,Man,ON,London Police Service,gunshot,2024,Municipal/regional police
+29,2024-07-29,Man,ON,Durham Regional Police Service,taser/cew,2024,Municipal/regional police
+NA,2024-08-04,Man,QC,Police de Trois-Rivieres,gunshot,2024,Municipal/regional police
+NA,2024-08-08,Man,QC,Quebec City Police Service,unknown,2024,Municipal/regional police
+NA,2024-08-14,Man,AB,Edmonton Police Service,gunshot,2024,Municipal/regional police
+19,2024-08-15,Man,ON,South Simcoe Police Service,gunshot,2024,Municipal/regional police
+NA,2024-08-26,Unknown,QC,Saguenay Police Service,unknown,2024,Municipal/regional police
+NA,2024-08-27,Woman,QC,Sherbrooke Police Department,taser/cew,2024,Municipal/regional police
+15,2024-08-30,Man,AB,RCMP,gunshot,2024,RCMP
+57,2024-09-06,Man,ON,Windsor Police Service,gunshot,2024,Municipal/regional police
+34,2024-09-08,Man,NB,RCMP,gunshot,2024,RCMP
+31,2024-09-08,Man,SK,RCMP,gunshot,2024,RCMP
+42,2024-09-17,Man,AB,Calgary Police Service,taser/cew,2024,Municipal/regional police
+37,2024-09-19,Woman,BC,RCMP,gunshot,2024,RCMP
+34,2024-09-24,Man,SK,RCMP,gunshot,2024,RCMP
+NA,2024-10-02,Unknown,MB,Winnipeg Police Service,gunshot,2024,Municipal/regional police
+NA,2024-10-22,Man,BC,RCMP,gunshot,2024,RCMP
+NA,2024-10-23,Man,QC,Service de police de la Ville de Gatineau,gunshot,2024,Municipal/regional police
+46,2024-10-27,Man,ON,OPP,unknown,2024,Provincial police
+17,2024-10-30,Man,ON,York Regional Police,gunshot,2024,Municipal/regional police
+NA,2024-11-02,Unknown,QC,Police de Trois-Rivieres,gunshot,2024,Municipal/regional police
+27,2024-11-04,Man,QC,Nunavik Police Service,gunshot,2024,Other
+26,2024-11-07,Man,ON,OPP,gunshot,2024,Provincial police
+43,2024-11-09,Man,ON,Hamilton Police Service,gunshot,2024,Municipal/regional police
+17,2024-11-22,Man,MB,RCMP,gunshot,2024,RCMP
+24,2024-11-24,Man,MB,Winnipeg Police Service,gunshot,2024,Municipal/regional police
+NA,2024-12-04,Man,BC,Vancouver Police Department,gunshot,2024,Municipal/regional police
+NA,2024-12-14,Man,AB,RCMP,gunshot,2024,RCMP
+NA,2024-12-23,Man,AB,RCMP,gunshot,2024,RCMP
+33,2025-01-14,Man,MB,RCMP,gunshot,2025,RCMP
+NA,2025-01-24,Man,MB,RCMP,unknown,2025,RCMP
+NA,2025-01-31,Unknown,BC,Surrey Police Service,gunshot,2025,Municipal/regional police
+15,2025-02-09,Man,BC,RCMP,gunshot,2025,RCMP
+NA,2025-02-19,Man,AB,Calgary Police Service,gunshot,2025,Municipal/regional police
+NA,2025-02-20,Unknown,QC,Granby City Police,gunshot,2025,Municipal/regional police
+25,2025-02-22,Man,NS,Halifax Regional Police,taser/cew,2025,Municipal/regional police
+37,2025-02-28,Man,NS,Halifax Regional Police,taser/cew,2025,Municipal/regional police
+NA,2025-03-29,Man,QC,Service de police de la Ville de Montreal,gunshot,2025,Municipal/regional police
+29,2025-03-30,Man,QC,Service de police de la Ville de Montreal,restraint,2025,Municipal/regional police
+NA,2025-04-18,Man,QC,Surete du Quebec,taser/cew,2025,Provincial police
+16,2025-04-20,Man,ON,Toronto Police Service,gunshot,2025,Municipal/regional police
+30,2025-04-24,Man,ON,Peel Regional Police,gunshot,2025,Municipal/regional police
+29,2025-04-28,Man,SK,RCMP,unknown,2025,RCMP
+NA,2025-05-04,Man,NU,RCMP,unknown,2025,RCMP
+35,2025-05-06,Man,NU,Nunavik Police Service,gunshot,2025,Other
+32,2025-05-30,Man,MB,Winnipeg Police Service,gunshot,2025,Municipal/regional police
+34,2025-06-13,Man,ON,York Regional Police,gunshot,2025,Municipal/regional police
+46,2025-06-17,Man,ON,Toronto Police Service,environmental force,2025,Municipal/regional police
+NA,2025-06-22,Unknown,QC,Surete du Quebec,gunshot,2025,Provincial police
+NA,2025-06-23,Unknown,QC,Quebec City Police Service,environmental force,2025,Municipal/regional police
+36,2025-06-24,Man,AB,RCMP,gunshot,2025,RCMP
+NA,2025-07-04,Man,BC,RCMP,unknown,2025,RCMP
+NA,2025-07-07,Man,BC,RCMP,gunshot,2025,RCMP
+34,2025-07-17,Man,NU,Nunavik Police Service,gunshot,2025,Other
+NA,2025-07-18,Man,AB,RCMP,gunshot,2025,RCMP
+29,2025-07-18,Unknown,SK,Regina Police Service,gunshot,2025,Municipal/regional police
+40,2025-07-22,Man,ON,Nishnawbe Aski Police Service,gunshot,2025,Other
+NA,2025-07-24,Man,NU,RCMP,gunshot,2025,RCMP
+NA,2025-07-27,Man,AB,RCMP,gunshot,2025,RCMP
+40,2025-07-30,Man,ON,Toronto Police Service,gunshot,2025,Municipal/regional police
+24,2025-07-31,Man,ON,OPP,gunshot,2025,Provincial police
+19,2025-08-08,Man,SK,RCMP,gunshot,2025,RCMP
+22,2025-08-12,Man,ON,OPP,gunshot,2025,Provincial police
+NA,2025-08-19,Man,BC,Vancouver Police Department,gunshot,2025,Municipal/regional police
+NA,2025-08-26,Man,QC,Surete du Quebec,environmental force,2025,Provincial police
+41,2025-09-01,Man,ON,Peel Regional Police,environmental force,2025,Municipal/regional police
+32,2025-09-07,Man,ON,Toronto Police Service,taser/cew,2025,Municipal/regional police
+58,2025-09-20,Man,ON,Windsor Police Service,gunshot,2025,Municipal/regional police
+15,2025-09-21,Man,QC,Service de police de l'agglomeration de Longueuil,gunshot,2025,Municipal/regional police
+NA,2025-09-23,Unknown,QC,Service de police de la Ville de Montreal,environmental force,2025,Municipal/regional police
+22,2025-09-25,Man,SK,Regina Police Service,gunshot,2025,Municipal/regional police
+NA,2025-09-27,Unknown,NB,RCMP,gunshot,2025,RCMP
+NA,2025-10-14,Woman,NS,RCMP,gunshot,2025,RCMP
+38,2025-10-22,Man,ON,Niagara Regional Police Service,gunshot,2025,Municipal/regional police
+NA,2025-11-01,Man,BC,RCMP,gunshot,2025,RCMP
+19,2025-11-02,Woman,ON,OPP,environmental force,2025,Provincial police
+18,2025-11-12,Man,ON,Peel Regional Police,environmental force,2025,Municipal/regional police
+29,2025-11-18,Man,MB,RCMP,gunshot,2025,RCMP
+NA,2025-11-23,Man,AB,Calgary Police Service,taser/cew,2025,Municipal/regional police
+NA,2025-11-26,Unknown,QC,Surete du Quebec,environmental force,2025,Provincial police
+19,2025-11-28,Man,ON,Waterloo Regional Police Service,unknown,2025,Municipal/regional police
+NA,2025-12-05,Man,ON,Greater Sudbury Police Service,gunshot,2025,Municipal/regional police
+NA,2025-12-06,Man,ON,Toronto Police Service,gunshot,2025,Municipal/regional police
+NA,2025-12-10,Woman,QC,Surete du Quebec,gunshot,2025,Provincial police
+19,2025-12-11,Man,ON,Peel Regional Police,gunshot,2025,Municipal/regional police
+26,2025-12-13,Man,ON,Niagara Regional Police Service,gunshot,2025,Municipal/regional police
+NA,2025-12-14,Woman,BC,Surrey Police Service,environmental force,2025,Municipal/regional police
+NA,2025-12-19,Man,BC,RCMP,taser/cew,2025,RCMP
+NA,2025-12-25,Woman,BC,Surrey Police Service,environmental force,2025,Municipal/regional police
+6,2025-12-30,Woman,NU,Nunavik Police Service,gunshot,2025,Other
