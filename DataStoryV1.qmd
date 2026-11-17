@@ -43,7 +43,6 @@ set.seed(466)
 ```
 
 ## Read in the Raw Data File
-
 ```{r}
 raw_data <- read_csv("Trackinginjustice-RawData.csv", show_col_types = FALSE)
 ```
