@@ -270,7 +270,7 @@ Unknown values are stored as the word "Unknown" (force type, agency) or as 'NA' 
 ## Exploratory Data Analysis
 ```{r}
 #| label: fig-age
-#| fig-cap: "Age of people who died (deaths with unknown age are not shown)"
+#| fig-cap: "Age of people who died (deaths with unknown age are not shown)"git add .
 
 clean_data |>
   filter(!is.na(age)) |>
