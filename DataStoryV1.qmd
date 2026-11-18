@@ -1,6 +1,6 @@
 ---
 title: "Milestone 2: Exploratory Data Analysis of Police-Involved Deaths"
-author: Ashlynn Argo
+author: "Ashlynn Argo"
 format: pdf
 date: November 17, 2026
 editor: visual
@@ -10,13 +10,18 @@ execute:
 bibliography: datastory.bib
 ---
 
-## Introduction
-
-This data story uses Tracking (In)Justice's (@TrackingInJustice) data set on police-involved deaths to analyze
 
 ## Research Question
 
 How does the type of force used in police-involved deaths in Canada vary across police agencies between 2021-2025?
+
+## Introduction
+
+This data story uses Tracking (In)Justice's [@TrackingInJustice] data set, downloaded on , from https://trackinginjustice.ca/explore-the-data/. The data looks at recorded police-involved deaths to analyze the characteristics of victims and identify uses of force across police agencies.
+
+The measure for this data story is the highest level of force recorded for each death, and the comparison is across types of police agency (for example, the RCMP and municipal police). I first describe the data, then show how I cleaned and tested it, identified any missing data and noted how I chose to manage it, then explore the relationship between force type and agency type with tables and graphs. The final section describes what surprised me in the data.
+
+The analysis was done in R [@citeR] using the tidyverse [@tidyverse], janitor [@janitor], testthat [@testthat], skimr [@skimr], and ggplot2 [@ggplot2].
 
 ## Install Necessary Packages
 
@@ -25,30 +30,31 @@ How does the type of force used in police-involved deaths in Canada vary across 
 #install.packages("janitor")
 #install.packages("testthat")
 #install.packages("skimr")
+#install.packages("ggplot2")
 ```
 
 ## Run Libraries
-
 ```{r}
 library(tidyverse)
 library(janitor)
 library(testthat)
 library(skimr)
+library(ggplot2)
 ```
 
 ## Set the Seed
-
 ```{r}
 set.seed(466)
 ```
 
 ## Read in the Raw Data File
+The raw file is never edited by hand. All changes are made in code, and the cleaned data is saved as a separate file.
 ```{r}
 raw_data <- read_csv("Trackinginjustice-RawData.csv", show_col_types = FALSE)
 ```
 
 ## Remove Names of Victims
-
+Names of individuals are not needed to answer the research question, so they are removed immediately to respect victims. The original data has a further details section that is not being used alongside the victims race.
 ```{r}
 my_data <- raw_data |>
   clean_names() |>
@@ -57,7 +63,6 @@ my_data <- raw_data |>
 ```
 
 ## Look at the Data before Cleaning
-
 ```{r}
 glimpse(my_data)
 ```
@@ -82,8 +87,10 @@ my_data |> count(highest_level_force, sort = TRUE)
 my_data |> count(police_service, sort = TRUE) |> slice_head(n = 10)
 ```
 
-# Cleaning
 
+The dates are stored as text in day/month/year order, age is text because it contains the word "Unknown", and there are around 50 different police services, most with only a few deaths. These are the main things to clean.
+
+## Cleaning
 ```{r}
 my_data <- my_data |>
   mutate(
@@ -97,17 +104,17 @@ my_data <- my_data |>
       police_service == "Saguenay Police Department" ~ "Saguenay Police Service",
       .default = police_service
     ),
-    # One row has the province code "QB", which is not a valid code.
-    # The police service on that row is in Quebec, so it is recoded to "QC".
     province = case_when(
       province == "QB" ~ "QC",
       .default = province
     )
   )
 ```
+One row has the province code "QB", which is not a valid code. The police service on that row is in Quebec, so it is recoded to "QC".
+
+
 
 ## Group Police Services into Agency Types
-
 ```{r}
 my_data <- my_data |>
   mutate(
@@ -121,9 +128,9 @@ my_data <- my_data |>
     )
   )
 ```
+I checked that every police service landed in the right group by listing each service with its group.
 
-## Check they are in the right groups
-
+## Check Groups
 ```{r}
 my_data |>
   distinct(agency_group, police_service) |>
@@ -131,20 +138,19 @@ my_data |>
   print(n = Inf)
 ```
 
-\`
+
 
 ```{r}
 my_data |> count(agency_group, sort = TRUE)
 ```
 
-# Run Tests
-
+## Run Tests
+###### Lists of the values I expect to see:
 ```{r}
 expected_force <- c(
   "environmental force", "gunshot", "intermediate weapon",
   "other", "physical force", "restraint", "taser/cew", "unknown"
 )
-
 expected_groups <- c(
   "RCMP", "Provincial police", "Municipal/regional police",
   "Multiple agencies", "Other", "Unknown"
@@ -153,46 +159,69 @@ expected_groups <- c(
 valid_provinces <- c(
   "BC", "AB", "SK", "MB", "ON", "QC", "NB", "NS", "PE", "NL", "YT", "NT", "NU"
 )
+```
 
+###### Check if dates are converted correctly and fall within the years the project is looking at:
+```{r}
 test_that("dates parsed and fall in 2021-2025", {
   expect_s3_class(my_data$date, "Date")
   expect_false(anyNA(my_data$date))
   expect_true(all(my_data$year %in% 2021:2025))
 })
+```
 
+###### Check if force type only has the categories I expect:
+```{r}
 test_that("highest_level_force only has expected categories", {
   expect_false(anyNA(my_data$highest_level_force))
   expect_true(all(my_data$highest_level_force %in% expected_force))
 })
+```
 
+###### Make sure age is a whole number and plausible (unknown numbers are NA and skipped):
+```{r}
 test_that("age is numeric and plausible", {
   expect_type(my_data$age, "integer")
   expect_true(all(my_data$age >= 0 & my_data$age <= 110, na.rm = TRUE))
 })
+```
 
+
+###### Check if every death was assigned to one of the agency groups:
+```{r}
 test_that("every death has an expected agency group", {
   expect_false(anyNA(my_data$agency_group))
   expect_true(all(my_data$agency_group %in% expected_groups))
 })
+```
 
+###### Make sure cleaning did not add or drop any deaths:
+```{r}
 test_that("cleaning kept every row", {
   expect_equal(nrow(my_data), nrow(raw_data))
 })
+```
 
+###### Make sure names of victims are removed from the cleaned data:
+```{r}
 test_that("names of individuals were removed", {
   expect_false(any(c("full_name", "name_first", "name_last") %in% names(my_data)))
 })
+```
 
+###### Check if the province is a valid province or territory code:
+```{r}
 test_that("province codes are valid", {
   expect_true(all(my_data$province %in% valid_provinces))
 })
 ```
 
+The tests pass, so the cleaned data is saved under a different name from the raw file, then read back in. Everything from here on uses "clean_data".
+
+# Save the Clean Data CSV
 ```{r}
 write_csv(my_data, "Trackinginjustice_CleanData.csv")
 ```
-
-# Exploratory Data Analysis
 
 ```{r}
 clean_data <- read_csv("Trackinginjustice_CleanData.csv", show_col_types = FALSE)
@@ -201,6 +230,28 @@ glimpse(clean_data)
 skim(clean_data)
 ```
 
+```{r}
+#| label: numbers
+#| echo: false
+
+n_total <- nrow(clean_data)
+n_services <- n_distinct(clean_data$police_service)
+share_gunshot <- round(mean(clean_data$highest_level_force == "gunshot") * 100, 1)
+n_age_unknown <- sum(is.na(clean_data$age))
+pct_age_unknown <- round(n_age_unknown / n_total * 100, 1)
+n_force_unknown <- sum(clean_data$highest_level_force == "unknown")
+n_multiple <- sum(clean_data$agency_group == "Multiple agencies")
+n_other <- sum(clean_data$agency_group == "Other")
+
+pct_gun <- function(group) {
+  round(mean(clean_data$highest_level_force[clean_data$agency_group == group] == "gunshot") * 100, 1)
+}
+```
+
+
+
+
+## Missing Data 
 ```{r}
 tibble(
   variable = c("age", "force type", "agency"),
@@ -211,14 +262,29 @@ tibble(
   )
 )
 ```
+Unknown values are stored as the word "Unknown" (force type, agency) or as 'NA' (age), so they are counted directly. I keep unknown force types as their own category and leave unknown ages as 'NA'. Nothing is guessed or filled in, and any graph that leaves out deaths says how many.
 
+
+
+
+## Exploratory Data Analysis
 ```{r}
-ggplot(clean_data, aes(x = age)) +
+#| label: fig-age
+#| fig-cap: "Age of people who died (deaths with unknown age are not shown)"
+
+clean_data |>
+  filter(!is.na(age)) |>
+  ggplot(aes(x = age)) +
   geom_histogram(binwidth = 5, colour = "white") +
-  labs(x = "Age", y = "Number of deaths")
+  labs(x = "Age", y = "Number of deaths") +
+  theme_minimal()
 ```
 
+
 ```{r}
+#| label: fig-force
+#| fig-cap: "Highest level of force used"
+
 clean_data |>
   count(highest_level_force) |>
   ggplot(aes(x = fct_reorder(highest_level_force, n), y = n)) +
@@ -228,6 +294,9 @@ clean_data |>
 ```
 
 ```{r}
+#| label: fig-agency
+#| fig-cap: "Number of deaths by agency"
+
 clean_data |>
   count(agency_group) |>
   ggplot(aes(x = fct_reorder(agency_group, n), y = n)) +
@@ -245,6 +314,10 @@ clean_data |>
 ```
 
 ```{r}
+#| label: fig-combined
+#| fig-cap: "Quantity of deaths by agency with use of force"
+
+
 clean_data |>
   add_count(agency_group) |>
   mutate(agency_label = str_c(agency_group, " (n = ", n, ")")) |>
@@ -258,35 +331,15 @@ clean_data |>
   )
 ```
 
-```{r}
-clean_data |>
-  tabyl(agency_group, highest_level_force) |>
-  adorn_percentages("row") |>
-  adorn_pct_formatting(digits = 1) |>
-  adorn_ns()
-```
 
-```{r}
-clean_data |>
-  add_count(agency_group) |>
-  mutate(agency_label = str_c(agency_group, " (n = ", n, ")")) |>
-  ggplot(aes(x = fct_infreq(agency_label), fill = highest_level_force)) +
-  geom_bar(position = "fill") +
-  coord_flip() +
-  labs(x = "Agency type", y = "Proportion of deaths", fill = "Highest level force")
-```
-
-```{r}
-n_total <- nrow(clean_data)
-share_gunshot <- round(mean(clean_data$highest_level_force == "gunshot") * 100, 1)
-n_unknown_force <- sum(clean_data$highest_level_force == "unknown")
-smallest_group <- clean_data |>
-  count(agency_group) |>
-  slice_min(n, n = 1, with_ties = FALSE)
-```
 
 ## What Surprised Me
+I was surprise to see that a third of the ages are unknown. 92 out of 280 deaths by police force did not have the ages of the victims available. The agency attached to each death is also inconsistent at times. Some cells had multiple agencies listed and Quebec appeared in the data as a code QB once.
 
+I expected gunshots to be high but I did not expect them to be so high in comparison to other force types as well as across every agency type.
+
+Any unreported deaths would not be reflected in the data and all unknowns (which is significant in the age category) reflects information that is not known to the public.
+
+
+\newpage
 ## References
-
-@citeR
